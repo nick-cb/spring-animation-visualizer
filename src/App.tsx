@@ -93,6 +93,7 @@ export default function App() {
         {showRealValue ? <Chart values={realValues} /> : null}
       </div>
       <AnimatedSliderBall
+        key={count}
         value={val}
         options={options}
         onAnimationComplete={() => {
